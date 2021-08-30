@@ -95,35 +95,9 @@ function App() {
     []
   );
 
-  // useEffect(() => {
-  //   const subscriber = onAuthStateChanged(auth, (user) => {
-  //     console.log(user);
-  //     if (user) {
-  //       setUser(user);
-  //     }
-  //   });
-  //   return subscriber;
-  // }, []);
-
-
-  // const handleSubmit = (event: React.MouseEvent<HTMLElement>) => {
-  //   // createUserWithEmailAndPassword(auth, mail, password);
-  //   signInWithPopup(auth, provider)
-  //     .then(user => {
-  //       alert("success : " + user.user.displayName + "さんでログインしました");
-  //     })
-  //     .catch(error => {
-  //       alert(error.message);
-  //     });
-
-  //   event.preventDefault();
-  // };
-
-
   return (
     <>
       <div className="App">
-        {/* <Link to="/login">Login</Link> */}
         <Router>
           <Auth setDisplayName={handleSetDisplayName} setEmail={handleSetEmail} />
           <Switch>
